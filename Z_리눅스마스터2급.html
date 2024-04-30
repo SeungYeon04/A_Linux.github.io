@@ -157,5 +157,63 @@
     </table>
     <br>
     <br>
+    <table border="1">
+        <caption>RAID 레벨구조</caption>
+        <tr><td>RAID 0</td><td>
+            <li>빠른 데이터의 압출력을 위해 스트라이핑(String)을 사용한다.</li>
+            <li>하나의 디스크에 오류가 발생하면 데이터를 잃어버릴 수 있다.</li>
+        </td></tr>
+        <tr><td>RAID 1</td><td>
+            <li>2개 이상의 디스크를 미러링을 통해 하나의 디스크처럼 사용한다.</li>
+            <li>완전히 동일하게 데이터를 복제하기 때문에 사용량이 절반밖에 되지 않는다.</li>
+            <li>하나의 디스크에 오류가 발생하면 미러링된 디스크를 통해 복구할 수 있다.</li>
+        </td></tr>
+        <tr><td>RAID 0+1</td><td>
+            <li>RAID 0와 RAID 1을 결합하는 방식이다.</li>
+            <li>최소 4개 이상의 디스크에서 먼저 2개씩 RAID 0(스트라이핑)으로 묶고 이것을 다시 RAID1(미러링)으로 결합하는 방식이다.</li>
+        </td></tr>
+        <tr><td>RAID 2</td><td>
+            <li>오류 정정을 위해 해밍코드를 사용하는 방식. 비트 단위의 해밍코드를 적용한다.</li>
+            <li>최근 디스크 드라이브가 기본적으로 유료 검출 기능이 있으므로 거의 사용하지 않는다.</li>
+        </td></tr>
+        <tr><td>RAID 5</td><td>
+            <li>3개 이상의 디스크를 사용하여 하나의 디스크처럼 사용하고, <br> 
+            각각의 디스크에 패리티 정보를 가지고 있는 방식이다.</li>
+            <li>하나의 디스크에 오류가 발생해도 다른 2개의 디스크를 통해 복구할 수 있다.</li>
+            <li>패리티 디스크를 별도로 사용하지 않으므로 병목 현상이 일어나지 않음.</li>
+        </td></tr>
+    </table>
+    <br>
+    <br>
+    <li>etc/passwd 파일의 구조<br>
+    username : password : uid : gid : comment : homedirectory : shell<br>
+    (계정명 : 패스워드 : UID : GID : 설명 : 홈 디렉토리 : 로그인셸종류)<br>
+    <br>
+    <li>etc/shadow 파일의 구조</li>
+    username : passwd : lastchange : mindays : maxdays : warndays : inactive : expire : flag <br>
+    (계정명 : 암호화된 패스워드 : 변경 후 지난 일 수 : 변경최소 일 : 최대유효기간 : 만료경고일 : 만료 후 비활성화 기간 : 계정만료일 : 예약)<br>
+    <br>
+    <li>etc/group 파일의 구조</li>
+    groupname : password : gid : members<br>
+    (그룹명 : 패스워드 : GID : 소속된 사용자)<br>
+    <br>
+    <hr>
+    <br>
+    <h2>리눅스 운영 및 관리</h2>
+    1. 파일 및 디렉터리의 속성<br>
+    - rw-r--r--. 1 root root 45 10월 11 13 :44 linux.txt<br>
+    <br>
+    <table border="1">
+        <tr><td>-(파일유형)</td><td>- 일반파일, c 문자파일, | 심볼릭 링크파일, b 블록장치파일, <br>s 소켓, p 파이프</td></tr>
+        <tr><td>rw-r--r--.</td><td>허가권</td></tr>
+        <tr><td>1</td><td>링크 수</td></tr>
+        <tr><td>root</td><td>소유자명</td></tr>
+        <tr><td>root</td><td>그룹명</td></tr>
+        <tr><td>45</td><td>파일 크기</td></tr>
+        <tr><td>10월 11 13 :44</td><td>마지막으로 변경된 시간</td></tr>
+        <tr><td>linux.txt</td><td>파일명</td></tr>
+    </table>
+    <br>
+    <br>
 </body>
 </html>
