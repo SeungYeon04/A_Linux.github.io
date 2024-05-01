@@ -215,5 +215,65 @@
     </table>
     <br>
     <br>
+    <table border="1">
+    <caption>파일*디렉터리 허가권 사용모드</caption>
+    <tr><th></th><th>사용자권한</th><th>그룹권한</th><th>제3자 권한</th></tr>
+    <tr><td>기호모드</td><td>r w x</td><td>r w x</td><td>r w x</td></tr>
+    <tr><td>숫자모드(8진수)</td><td>4 2 1</td><td>4 2 1</td><td>4 2 1</td></tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>파일*디렉터리 허가권 사용기호</caption>
+        <tr><th></th><th>사용자</th><th>권한</th><th>연산자</th></tr>
+        <tr><td>기호</td><td>u | g | o</td><td>+ | - | =</td><td>r | w | x</td></tr>
+        <tr><td>의미</td><td>소유자 | 그룹 | 제3자</td><td>허가권부여 | 허가권제거 | 허가권지정</td><td>읽기 | 쓰기 | 실행</td></tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>파일*디렉터리 특수허가권</caption>
+        <tr><th></th><th>기호</th><th>절대값</th><th>설명</th></tr>
+        <tr><td>SetUID</td><td>s</td><td>4000</td><td>
+            <li>파일의 소유자 실행 권한에 UID 설정</li>
+            <li>SetUID가 설정된 파일 실행 시 특정 작업 수행을 위하여<br>일시적으로 파일 소유자의 권한을 부여하는 비트</li>
+        </td></tr>
+        <tr><td>SetGID</td><td>s</td><td>2000</td><td>
+            <li>파일의 그룹 실행 권한에 GID 설정</li>
+            <li>SetGID가 설정된 파일 실행 시, 특정 작업 수행을 위하여 일시적으로 파일 소유자 그룹의 권한을 부여하는 비트</li>
+        </td></tr>
+        <tr><td>Sticky</td><td>t</td><td>1000</td><td>
+            <li>파일의 제 3자 실행 권한에 Sticky Bit설정</li>
+            <li>Sticky Bit가 설정된 디렉터리 안의 파일에 모든 사용자에게 쓰기 권한이 부여되어 있을 경우에도<br>
+                파일의 소유자나 root사용자가 아니면 해당 파일을 삭제할 수 없음</li>
+            <li>누구나 파일을 수정 생성 가능</li>
+        </td></tr>
+    </table>
+    <br>
+    <br>
+    <li>etc/fstab 파일의 구조<br>
+        /dev/sdb1 /home ext3 defaults 0 0<br>
+        <br>
+        /dev/sdb1: 파일시스템장치명<br>
+        /home: 마운트포인트<br>
+        ext3: 파일시스템유형<br>
+        defaults: 파일시스템속성<br>
+        0: Dump설정(0불가능한시스템 1가능시스템)<br>
+        0: 파일시스템옵션점검<br>
+        <br>
+        <br>
+        <table border="1">
+            <caption>파일 시스템 종류</caption>
+            <tr><td>리눅스 파일 시스템</td><td>ext, ext2, ext3, ext4</td></tr>
+            <tr><td>리눅스 저널링 파일 시스템</td><td>jfs, xfs, reiserfs</td></tr>
+            <tr><td>네트워크 파일 시스템</td><td>smb, cifs, nfs</td></tr>
+            <tr><td>CD-ROM</td><td>iso9660</td></tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>셸의 종류(Shell)</caption>
+            <tr></tr>
+        </table>
 </body>
 </html>
