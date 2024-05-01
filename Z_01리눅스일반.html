@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>한권으로끝내는</title>
+    <link type="text/css" rel="stylesheet" href="fonts.css"> 
+</head>
+<body>
+    <h1><a href="index.html">부러의 다락방</a></h1> 
+    <br>
+    <h2>리눅스 일반</h2>
+    <table border="1">
+        <caption>배포판의 종류 및 특징</caption>
+        <tr><td id="pink">슬랙웨어</td>
+        <td><li>1993년 7월에 패트릭 볼커딩에 의해 만들어짐</li>
+            <li>가장 오래된 배포판</li>
+            <li>대표적인 배포판: SUSE, Vector Linux, Salix OS, Perteus 등</li></td></tr>
+        <tr><td id="pink">데비안</td><td>
+            <li>1993년 9월 이안 머독에 의해 데비안 프로젝트를 설립하여 개발*배포판</li>
+            <li>패키지 설치 및 업그레이드가 편리</li>
+            <li>대표적인 배포판: Ubuntu, Linux Mint, Knoppix, Corel, Elementary</li>
+        </td></tr>
+        <tr><td id="pink">우분투</td><td>
+            <li>영국 캐노니컬사의 지원을 받아 개발*배포</li>
+            <li>데비안 GNU/Linux에 기반한 배포판</li>
+            <li>고유한 데스크톱 환경인 유니티 사용</li>
+            <li>편리한 사용자 인터페이스 제공</li>
+            <li>6개월마다 새로운 버전 배포</li>
+        </td></tr>
+        <tr><td id="pink">레드햇</td><td>
+            <li>미국 레드햇사가 개발*배포</li>
+            <li>유료인 레드햇 엔터프라이즈 리눅스와(RHEL)와 무료 페도라(Fedora)로 배포</li>
+            <li>대표적인 배포판: CentOS, Fedora, RHEL, Oracle Linux, Scientific Linux, Asianux, Mandrake, Mandriva 등</li>
+        </td></tr>
+        <tr><td id="pink">RHEL</td><td>
+            <li>레드햇사가 개발*배포하는 상용 리눅스 배포판</li>
+            <li>RPM 기반의 소프트웨어를 포함</li>
+            <li>6개월마다 새로운 버전 배포</li>
+        </td></tr>
+        <tr><td id="pink">페도라</td><td>
+            <li>레드햇의 후원으로 개발*배포</li>
+            <li>RPM 기반의 소프트웨어를 포함</li>
+            <li>6개월마다 새로운 버전 배포</li>
+        </td></tr>
+        <tr><td id="pink">CentOS</td><td>
+            <li>레드햇 인터프라이즈 리눅스와 완벽하게 호환되는 기업용 무료 배포판</li>
+            <li>플랫폼을 제공할 목적으로 개발, 자체 커뮤니티에 의해 관리</li>
+            <li>레드햇의 기술지원은 받지 않음</li>
+        </td></tr>
+        <tr><td id="pink">수세</td><td>
+            <li>독일에서 개발*배포</li>
+            <li>유럽에서 많이 사용</li>
+            <li>풍부한 기능, 안정성과 보안 기능 포함</li>
+        </td></tr>
+        <tr><td id="pink">칼리</td><td>
+            <li>Offensive Security가 개발한 오픈 소스 리눅스 배포판</li>
+            <li>백트랙처럼 수많은 해킹도구와 설명서를 포함하고 있음</li>
+            <li>백트랙은 우분투, 칼리 리눅스 또는 데비안 기반 배포판</li>
+        </td></tr>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <h2>리눅스의 특징과 장단점</h2>
+    <br>
+    <li>오픈소스(open source) 운영체제이다.</li>
+    <li>다중사용자(multi user), 다중 작업(multi tasking)을 지원한다.</li>
+    <li>강력한 네트워킹 지원 및 다양한 파일 시스템을 지원합니다.</li> 
+    <li>뛰어난 이식성 * 유연성 * 확장성을 지니며 안정성과 보안성도 강력하다.</li>
+    <li>가격 대비 성능이 우수하며 다양한 으용 프로그램을 제공한다.</li>
+    <li>다양한 배포판이 존재한다.</li> 
+    <br>
+    <br>
+    <table border="1">
+        <caption>리눅스 장단점</caption>
+        <tr><td id="pink">장점</td><td>
+            <li>유닉스와 완벽한 호환</li>
+            <li>POSIX규격을 따름(Portable Operating System Interface for Unix)</li>
+            <li>안정적인 운영체제</li>
+            <li>하드웨어의 효율적 운영</li>
+        </td></tr>
+        <tr><td id="pink">단점</td><td>
+            <li>공개용, 무료 운영체제로 기술 지원을 받기 어려움</li>
+            <li>특정 하드웨어에 대한 지원 부족</li>
+            <li>처음 접하는 사용자에게는 다소 어려움</li>
+            <li>한글 지원 미흡</li>
+        </td></tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>리눅스 부팅 과정</caption>
+        <tr><th>단계</th><th>진행과정</th><th>설명</th></tr>
+        <tr><td>1단계</td><td id="pink">ROM-BIOS 실행</td><td>
+            <li>POST(Power On Self Test) 과정을 수행 후 하드웨어 이상 유무를 검사한 후 에러가 발생할 경우 알림</li>
+            <li>부트 로더 로딩</li>
+        </td></tr>
+        <tr><td>2단계</td><td id="pink">부트 로더 실행</td><td>
+            <li>부트로더를 실행하기 위해서 커널을 로딩하고, 스와퍼 프로세스 호출</li>
+            <li>LiLo와 GRUB가 있음</li>
+        </td></tr>
+        <tr><td>3단계</td><td id="pink">스와퍼 프로세스 실행</td><td>
+            <li>장치 드라이버를 초기화</li>
+            <li>init 프로세서 실행</li>
+        </td></tr>
+        <tr><td>4단계</td><td id="pink">init프로세서 실행</td><td>
+            init 프로세서를 실행하여 /etc/inittab파일을 읽음
+        </td></tr>
+        <tr><td>5단계</td><td id="pink">부트 레벨 결정</td><td>
+            <li>부트 레벨 결정</li>
+        </td></tr>
+        <tr><td>6단계</td><td id="pink">rc.sysinit 스크립트 실행</td><td>/etc/rc.d/rc.sysinit 스크립트를 실행하여 시스템 초기화 작업 수행</td></tr>
+        <tr><td>7단계</td><td id="pink">rcx.d 스크립트 실행</td><td>/etc/rcx.d 스크립트를 실행하여 해당 부트 레벨 스크립트를 순차적으로 실행</td></tr>
+        <tr><td>8단계</td><td id="pink">X윈도 실행</td><td>부트레벨이 5일 경우 X윈도 환경으로 부팅</td></tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>런 레벨</caption>
+        <tr><th id="pink">런레벨</th><th id="pink">운영모드</th><th id="pink">설명</th></tr>
+        <tr><td id="pink">0레벨</td><td>Halt</td><td>시스템종료</td></tr>
+        <tr><td id="pink">1레벨</td><td>Single User Mode</td><td>단일 사용자 모드(CLI)</td></tr>
+        <tr><td id="pink">2레벨</td><td>Multi User Mode<br>(Without Networking)</td><td>다중 사용자 모드(CLI)<br>(네트워크 사용 불가)</td></tr>
+        <tr><td id="pink">3레벨</td><td>Multi User Mode<br>(Only Console Login)</td><td>다중 사용자 모드(CLI)</td></tr>
+        <tr><td id="pink">4레벨</td><td>Not Used</td><td>사용하지 않음</td></tr>
+        <tr><td id="pink">5레벨</td><td>Multi User Mode<br>With Display Manager</td><td>다중 사용자 모드(GUI, X윈도)</td></tr>
+        <tr><td id="pink">6레벨</td><td>ReBoot</td><td>재시작</td></tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>디렉터리의 특징</caption>
+        <tr><td id="pink">/</td><td>
+            <li>최상위 디렉터리</li>
+            <li>루트(/) 디렉터리라고 함</li>
+        </td></tr>
+        <tr><td id="pink">/bin</td><td>System Binary의 약어로 이진 파일이며 리눅스에서 기본 명령어가 저장된 디렉터리</td></tr>
+        <tr><td id="pink">/usr</td><td>시스템에 사용되는 각종 프로그램이 설치되는 디렉터리</td></tr>
+        <tr><td id="pink">/etc</td><td>리눅스 시스템의 각종 환경설정 파일과 디렉터리가 저장된 디렉터리</td></tr>
+        <tr><td id="pink">/sbin</td><td>시스템 관리를 위한 명령어가 저장된 디렉터리</td></tr>
+        <tr><td id="pink">/lib</td><td>
+            <li>프로그램의 각종 라이브러리 파일이 저장된 디렉터리</li>
+            <li>유틸리티, 패키지 등의 파일 포함</li>
+        </td></tr>
+        <tr><td id="pink">/var</td><td>
+            <li>시스템에서 사용되는 동적인 파일을 저장하는 디렉터리</li>
+            <li>각종 시스템 로그파일로 사용자 로그인에 대한 로그를 기록</li>
+            <li>메일서버를 운영한다면 사용자에게 전송된 메일을 임시로 저장하는 디렉터리</li>
+        </td></tr>
+        <tr><td id="pink">/tmp</td><td>임시 디렉터리로 스티키비트가 설정되어 있음</td></tr>
+        <tr><td id="pink">/root</td><td>시스템관리자(root)의 홈 디렉터리</td></tr>
+        <tr><td id="pink">/proc</td><td>
+            <li>시스템의 각종 프로세서, 프로그램 정보 그리고 하드웨어 정보가 저장된 디렉터리</li>
+            <li>가상파일 시스템으로 하드디스크에 물리적인 용량을 가지지 않는 디렉터리</li>
+        </td></tr>
+        <tr><td id="pink">/dev</td><td>시스템의 각종 장치에 접근하기 위한 장치 드라이버가 저장된 디렉터리</td></tr>
+        <tr><td id="pink">/home</td><td>일반 사용자의 홈 디렉터리</td></tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>RAID 레벨구조</caption>
+        <tr><td id="pink">RAID 0</td><td>
+            <li>빠른 데이터의 압출력을 위해 스트라이핑(String)을 사용한다.</li>
+            <li>하나의 디스크에 오류가 발생하면 데이터를 잃어버릴 수 있다.</li>
+        </td></tr>
+        <tr><td id="pink">RAID 1</td><td>
+            <li>2개 이상의 디스크를 미러링을 통해 하나의 디스크처럼 사용한다.</li>
+            <li>완전히 동일하게 데이터를 복제하기 때문에 사용량이 절반밖에 되지 않는다.</li>
+            <li>하나의 디스크에 오류가 발생하면 미러링된 디스크를 통해 복구할 수 있다.</li>
+        </td></tr>
+        <tr><td id="pink">RAID 0+1</td><td>
+            <li>RAID 0와 RAID 1을 결합하는 방식이다.</li>
+            <li>최소 4개 이상의 디스크에서 먼저 2개씩 RAID 0(스트라이핑)으로 묶고 이것을 다시 RAID1(미러링)으로 결합하는 방식이다.</li>
+        </td></tr>
+        <tr><td id="pink">RAID 2</td><td>
+            <li>오류 정정을 위해 해밍코드를 사용하는 방식. 비트 단위의 해밍코드를 적용한다.</li>
+            <li>최근 디스크 드라이브가 기본적으로 유료 검출 기능이 있으므로 거의 사용하지 않는다.</li>
+        </td></tr>
+        <tr><td id="pink">RAID 5</td><td>
+            <li>3개 이상의 디스크를 사용하여 하나의 디스크처럼 사용하고, <br> 
+            각각의 디스크에 패리티 정보를 가지고 있는 방식이다.</li>
+            <li>하나의 디스크에 오류가 발생해도 다른 2개의 디스크를 통해 복구할 수 있다.</li>
+            <li>패리티 디스크를 별도로 사용하지 않으므로 병목 현상이 일어나지 않음.</li>
+        </td></tr>
+    </table>
+    <br>
+    <br>
+    <li>etc/passwd 파일의 구조<br>
+    username : password : uid : gid : comment : homedirectory : shell<br>
+    (계정명 : 패스워드 : UID : GID : 설명 : 홈 디렉토리 : 로그인셸종류)<br>
+    <br>
+    <li>etc/shadow 파일의 구조</li>
+    username : passwd : lastchange : mindays : maxdays : warndays : inactive : expire : flag <br>
+    (계정명 : 암호화된 패스워드 : 변경 후 지난 일 수 : 변경최소 일 : 최대유효기간 : 만료경고일 : 만료 후 비활성화 기간 : 계정만료일 : 예약)<br>
+    <br>
+    <li>etc/group 파일의 구조</li>
+    groupname : password : gid : members<br>
+    (그룹명 : 패스워드 : GID : 소속된 사용자)<br>
+    <br>
+    <hr>
+    <br>
+    <h2>리눅스 운영 및 관리</h2>
+    1. 파일 및 디렉터리의 속성<br>
+    - rw-r--r--. 1 root root 45 10월 11 13 :44 linux.txt<br>
+    <br>
+    <table border="1">
+        <tr><td id="pink">-(파일유형)</td><td>- 일반파일, c 문자파일, | 심볼릭 링크파일, b 블록장치파일, <br>s 소켓, p 파이프</td></tr>
+        <tr><td id="pink">rw-r--r--.</td><td>허가권</td></tr>
+        <tr><td id="pink">1</td><td>링크 수</td></tr>
+        <tr><td id="pink">root</td><td>소유자명</td></tr>
+        <tr><td id="pink">root</td><td>그룹명</td></tr>
+        <tr><td id="pink">45</td><td>파일 크기</td></tr>
+        <tr><td id="pink">10월 11 13 :44</td><td>마지막으로 변경된 시간</td></tr>
+        <tr><td id="pink">linux.txt</td><td>파일명</td></tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+    <caption>파일*디렉터리 허가권 사용모드</caption>
+    <tr><th></th><th id="pink">사용자권한</th><th id="pink">그룹권한</th><th id="pink">제3자 권한</th></tr>
+    <tr><td>기호모드</td><td>r w x</td><td>r w x</td><td>r w x</td></tr>
+    <tr><td>숫자모드(8진수)</td><td>4 2 1</td><td>4 2 1</td><td>4 2 1</td></tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>파일*디렉터리 허가권 사용기호</caption>
+        <tr><th></th><th id="pink">사용자</th><th id="pink">권한</th><th id="pink">연산자</th></tr>
+        <tr><td>기호</td><td>u | g | o</td><td>+ | - | =</td><td>r | w | x</td></tr>
+        <tr><td>의미</td><td>소유자 | 그룹 | 제3자</td><td>허가권부여 | 허가권제거 | 허가권지정</td><td>읽기 | 쓰기 | 실행</td></tr>
+    </table>
+    <br>
+    <br>
+    <table border="1">
+        <caption>파일*디렉터리 특수허가권</caption>
+        <tr><th></th><th>기호</th><th>절대값</th><th>설명</th></tr>
+        <tr><td id="pink">SetUID</td><td>s</td><td>4000</td><td>
+            <li>파일의 소유자 실행 권한에 UID 설정</li>
+            <li>SetUID가 설정된 파일 실행 시 특정 작업 수행을 위하여<br>일시적으로 파일 소유자의 권한을 부여하는 비트</li>
+        </td></tr>
+        <tr><td id="pink">SetGID</td><td>s</td><td>2000</td><td>
+            <li>파일의 그룹 실행 권한에 GID 설정</li>
+            <li>SetGID가 설정된 파일 실행 시, 특정 작업 수행을 위하여 일시적으로 파일 소유자 그룹의 권한을 부여하는 비트</li>
+        </td></tr>
+        <tr><td id="pink">Sticky</td><td>t</td><td>1000</td><td>
+            <li>파일의 제 3자 실행 권한에 Sticky Bit설정</li>
+            <li>Sticky Bit가 설정된 디렉터리 안의 파일에 모든 사용자에게 쓰기 권한이 부여되어 있을 경우에도<br>
+                파일의 소유자나 root사용자가 아니면 해당 파일을 삭제할 수 없음</li>
+            <li>누구나 파일을 수정 생성 가능</li>
+        </td></tr>
+    </table>
+    <br>
+    <br>
+    <li>etc/fstab 파일의 구조<br>
+        /dev/sdb1 /home ext3 defaults 0 0<br>
+        <br>
+        /dev/sdb1: 파일시스템장치명<br>
+        /home: 마운트포인트<br>
+        ext3: 파일시스템유형<br>
+        defaults: 파일시스템속성<br>
+        0: Dump설정(0불가능한시스템 1가능시스템)<br>
+        0: 파일시스템옵션점검<br>
+        <br>
+        <br>
+        <table border="1">
+            <caption>파일 시스템 종류</caption>
+            <tr><td id="pink">리눅스 파일 시스템</td><td>ext, ext2, ext3, ext4</td></tr>
+            <tr><td id="pink">리눅스 저널링 파일 시스템</td><td>jfs, xfs, reiserfs</td></tr>
+            <tr><td id="pink">네트워크 파일 시스템</td><td>smb, cifs, nfs</td></tr>
+            <tr><td id="pink">CD-ROM</td><td>iso9660</td></tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>셸의 종류(Shell)</caption>
+            <tr><td id="pink">본셸 계열</td><td>sh, ksh, bash, zsh</td></tr>
+            <tr><td id="pink">C셸 계열</td><td>csh, tcsh</td></tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>주요 환경변수</caption>
+            <tr><td id="pink">DISPLAY</td><td>X 윈도 환경에서 화면 출력을 위해 접속할 X 서버의 주소 및 장치 번호</td></tr>
+            <tr><td id="pink">HOME</td><td>사용자의 홈 디렉터리</td></tr>
+            <tr><td id="pink">HOSTNAME</td><td>호스트명</td></tr>
+            <tr><td id="pink">LANG</td><td>기본 지원 언어</td></tr>
+            <tr><td id="pink">PS1</td><td>셸 프롬포트 선언 변수</td></tr>
+            <tr><td id="pink">PS2</td><td>2차 셸 프롬포트 선언 변수</td></tr>
+            <tr><td id="pink">PWD</td><td>현재 작업 디렉터린</td></tr>
+            <tr><td id="pink">SHELL</td><td>로그인셸</td></tr>
+            <tr><td id="pink">TERM</td><td>터미널 명</td></tr>
+            <tr><td id="pink">TMOUT</td><td>자동 로그아웃 시간</td></tr>
+            <tr><td id="pink">USER</td><td>사용자 명</td></tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>배시(Bash) 셸 관련 파일</caption>
+            <tr><td rowspan="2" id="pink">전역설정<br>파일</td>
+                <td>/etc/profile</td><td>
+                    <li>모든 사용자의 셸 환경을 제어하는 전역 설정 파일</li>
+                    <li>환경변수와 배시(Bash)가 실행하는 프로그램 제어</li>
+            </td></tr>
+
+            <tr><td>/etc/bashrc</td><td>
+                <li>별칭(alis)가 실행하는 함수를 제어</li>
+            </td></tr>
+            <tr>
+                <td rowspan="4" id="pink">지역설정파일</td>
+                <td>~/.bash_profile</td><td>개별 사용자의 셸 환경 제어는 지역 설정 파일</td>
+            </tr>
+            <tr>
+                <td>~/.bash_logout</td><td>로그아웃 직전에 실행되는 설정 파일</td>
+            </tr>
+            <tr>
+                <td>~/.bash_history</td><td>
+                    <li>사용자가 입력한 명령어가 저장되는 파일</li>
+                    <li>방향키로 이전 명령어를 확인할 수 있음.</li>
+                    <li>이전에 입력했던 명령어를 재사용 가능</li>
+                </td>
+            </tr>
+            <tr>
+                <td>~/.bashrc</td><td>별칭(alias)와 배시(bash)가 실행하는 함수를 지역적으로 제어</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>fork와 exec</caption>
+            <tr><td id="pink">fork</td><td>
+                <li>새로운 프로세스를 위한 메모리를 할당하고, 기존 프로세스를 복제하는 방식</li>
+                <li>fork실행 결과로 프로세스가 하나 더 생성되는 것. 또한 프로세스ID(PID)도 다른 프로세스가 생성되는 방식</li>
+                <li>원본 프로세스를 부모 프로세스(parent process)라고 함. <br>복제된 프로세스를 자식 프로세스(child process)라고 함.</li>
+            </td></tr>
+            <tr>
+                <td id="pink">exec</td>
+                <td>
+                    <li>fork처럼 새로운 프로세스에 할당하지 않고 exec를 호출한 프로세스가 아닌,<br>
+                    exec에 의해 호출된 프로세스만 메모리에 남게 됨</li>
+                    <li>exec 실행 결과로 생성되는 새로운 프로세스는 없다</li>
+                    <li>exec를 호출한 프로세스의 PID가 그대로 새로운 프로세스에 적용되며, <br>
+                    exec를 호출한 프로세스는 새로운 프로세스에 의해 덮어쓰게 됨</li>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>데몬별 동작방식</caption>
+            <tr><td id="pink">standalone</td><td>
+                <li>독립적인 실행 방식으로 메모리에 상주하고 있다가 요청이 들어오면 바로 서비스하는 방식</li>
+                <li>메모리에 상주하므로 (x)inetd데몬 보다 서버 부하가 적음</li>
+                <li>빠른 응답을 필요로 하는 경우에 이용</li>
+                <li>실행 스크립트 경로: /etc/init.d</li>
+                <li>관련 서비스: http, dns, mysql</li>
+            </td></tr>
+            <tr>
+                <td id="pink">(x)inetd</td><td>
+                    <li>(x)inetd은 다른 데몬들의 상위 데몬</li>
+                    <li>(x)inetd 자체는 메모리에 상주하는 독립 데몬으로 여러 다른 데몬들을 제어하고 관리</li>
+                    <li>(x)inetd 유형의 데몬들은 독립적으로 동작하지 못하고 (x)inetd 데몬에 의해 활성화 됨</li>
+                    <li>간헐적인 서비스를 필요로 하는 경우에 이용</li>
+                    <li>필요할 때마다 메모리에 적재하여 사용하고, <br>서비스가 종료되면 해제해야 하므로 standalone 보다 서버 부하가 많다.</li>
+                    <li>실행 스크립트 경로: /etc/xinetd.d</li>
+                    <li>관련 서비스: Telnet, FTP</li>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>시그널의 종류 (Signal)</caption>
+            <tr><th id="pink">번호</th><th id="pink">시그널</th><th id="pink">발생조건</th></tr>
+            <tr><td>1</td><td>SIGHUP</td><td>터미널과 연결이 끊어졌을 때</td></tr>
+            <tr><td>2</td><td>SIGINT</td><td>키보드로부터 오는 인터럽트 시그널(Ctrl+C 입력 시)</td></tr>
+            <tr><td>3</td><td>SIGOUT</td><td>키보드로부터 오는 실행중지 시그널(Ctrl+\ 입력 시)</td></tr>
+            <tr><td>6</td><td>SIGABRT</td><td>비정상 종료(abort 함수에 의해 발생)</td></tr>
+            <tr><td>9</td><td>SIGKILL</td><td>강제 종료 시</td></tr>
+            <tr><td>14</td><td>SIGALRM</td><td>알람에 의해 발생</td></tr>
+            <tr><td>15</td><td>SIGTERM</td><td>kill 시스템 호출 시</td></tr>
+            <tr><td>18</td><td>SIGCONT</td><td>중지된 프로세스 재실행 시</td></tr>
+            <tr><td>19</td><td>SIGSTOP</td><td>SIGSTOP 시그널 받을 때까지 프로세스 중지</td></tr>
+            <tr><td>20</td><td>SIGSTP</td><td>실행 정지 후 다시 실행을 계속하기 위해 대기시키는 시그널(Ctrl + Z 키 입력 시)</td></tr>   
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>에디터의 종류 및 특징</caption>
+            <tr><td id="pink">vi</td><td>
+                <li>1976년 빌 조이(Bill Joy)가 개발한 텍스트 편집기이다.</li>
+                <li>리눅스와 유닉스에 기본적으로 포함되어 있다.</li>
+            </td></tr>
+            <tr><td id="pink">vim</td><td>
+                <li>브람 무레나르가 vi편집기와 호환되면서 다양한 기능을 추가하여 만든 텍스트 편집기다.</li>
+            </td></tr>
+            <tr><td id="pink">pico</td><td>
+                <li>아보일 카사르가 개발한 텍스트 편집기이다.</li>
+                <li>초기 리눅스 배포판에서 사용한 편집기고 무료이지만, 오픈 소스 라이선스가 아니므로 소스 수정이 불가능하다.</li>
+            </td></tr>
+            <tr><td id="pink">nano</td><td>GNU 프로젝트에서 pico 편집기 복제판인 nano 편집기를 개발하였다.</td></tr>
+            <tr><td id="pink">emacs</td><td>
+                리차드 스톨만이 개발하였으며 <br>이후 제임스고슬링이 LISP 언어를 기반으로 emacs에 다양한 기능을 추가하였다.
+            </td></tr>
+            <tr><td id="pink">gedit</td><td>X 윈도 시스템 환경에서 사용할 수 있는 오픈 소스 텍스트 편집기이다.</td></tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <tr><td id="pink">입력모드</td><td>
+                <li>i, a, o, l, A, 0 키를 누른 후 텍스트를 입력할 수 있는 상태</li>
+                <li>파일의 내용을 입력하는 모드</li>
+            </td></tr>
+            <tr>
+                <td id="pink">명령모드</td><td>
+                    <li>Esc를 누른 상태</li>
+                    <li>복사(copy) 붙여넣기(paste) 제거(delete)</li>
+                </td>
+            </tr>
+            <tr>
+                <td id="pink">ex모드</td><td>
+                    <li>Esc 키를 누른 후, 콜론(:)을 입력한 상태.</li>
+                    <li>열기(open), 저장(save), 다른이름으로저장(save as)</li>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <table border="1">
+            <caption>실행옵션</caption>
+            <tr><td id="pink">-R</td><td>읽기 전용으로 파일을 실행</td></tr>
+            <tr><td id="pink">+</td><td>파일을 열 때 커서가 파일 본문의 마지막 행에 위치</td></tr>
+            <tr><td id="pink">-n</td><td>파일을 열 때 커서가 파일 본문의 n행에 위치</td></tr>
+            <tr><td id="pink">-r</td><td>손상된 파일 복구</td></tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>저장 및 경로</caption>
+            <tr><td id="pink">:q</td><td>나가기 (변경사항 있으면 오류 발생하고 나가지지 않음)</td></tr>
+            <tr><td id="pink">:q!</td><td>강제로 저장하지 않고 나가기</td></tr>
+            <tr><td id="pink">:w</td><td>저장하기</td></tr>
+            <tr><td id="pink">:wq</td><td>저장하고 나가기</td></tr>
+            <tr><td id="pink">:wq!</td><td>강제로 저장하고 나가기</td></tr>
+            <tr><td id="pink">:!bash</td><td>편집 상태를 그대로 두고, 배시 셸 실행. 재진입은 exit 후 Enter</td></tr>
+            <tr><td id="pink">ZZ</td><td>저장 후 나가기</td></tr>
+        </table>
+        <br>
+        <br>
+        <table border="1">
+            <caption>명령모드에서 입력모드로 전환</caption>
+            <tr><td id="pink">a</td><td>현재 커서 뒤에서 글자를 삽입</td></tr>
+            <tr><td id="pink">A</td><td>현재 커서 행의 맨 뒤에서 글자 삽입</td></tr>
+            <tr><td id="pink">i</td><td>현재 커서 위치에서 글자를 삽입</td></tr>
+            <tr><td id="pink">I</td><td>현재 커서 행의 맨 앞에서 글자 삽입</td></tr>
+            <tr><td id="pink">o</td><td>현재 커서 다음 행에서 글자를 삽입</td></tr>
+            <tr><td id="pink">O</td><td>현재 커서 위 행에서 글자를 삽입</td></tr>
+        </table>
+</body>
+</html>
