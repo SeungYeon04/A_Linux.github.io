@@ -19,6 +19,9 @@ IPv4의 IP를 사용했어요.
 그래서 비주얼 스튜디오 코드로 파일 수정하고 깃허브 올리고  
 가상머신 해서 띄워둡니다  
 
- 
+ root@master:/var/www/html/test-php# ls  
+test10.php  test12.php  test1.php  test3.php  test5.php  test7.php  test9.php  
+test11.php  test13.php  test2.php  test4.php  test6.php  test8.php  
+
   
 IDE: 비주얼 스튜디오 코드  
