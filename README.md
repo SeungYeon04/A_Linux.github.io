@@ -1,6 +1,6 @@
 나중에 리눅스 사이트 파일 저장소로 쓸게요  
 직접 만든 서버: http://crown.birdstudy.pe.kr/  
-깃허브 링크: 
+깃허브 링크: https://seungyeon04.github.io/SimpleLinux.github.io/  
 
 ASUS 공유기로 포트포워딩하여 올린 것입니다.  
 나중에 공유기 바뀌면 세팅해야 하는 방식이며  
