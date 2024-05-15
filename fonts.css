@@ -1,17 +1,34 @@
+    .container {
+        display: flex;
+        width: 80%; /* 네모네모길이 */
+        margin: 0% auto;
+    }
+
+    .ImageBox1 {
+        flex: 1.5;  
+    }
+
+    .ImageBox2 {
+        flex: 2;  
+    }
     body {
         font-family: 'Ownglyph_meetme-Rg';
-        background-color: rgb(255, 255, 255); 
+        background-color: rgb(232, 222, 247); 
+        margin: 0%;
+    }
 
+    .text {
+        
         width: 50%; /* 네모네모길이 */
-        margin: 0 auto; 
+        margin: 0% auto;
     }
         
     :link {
-        color: yellowgreen;
+        color: rgb(205, 50, 192);
     }
 
     :visited { 
-        color: rgba(153, 0, 138, 0.856);
+        color: rgba(0, 0, 0, 0.856);
     }
 
     a {
