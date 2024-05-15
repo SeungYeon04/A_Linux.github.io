@@ -1,5 +1,5 @@
 나중에 리눅스 사이트 파일 저장소로 쓸게요  
-직접 만든 서버: http://crown.birdstudy.pe.kr/ 
+직접 만든 서버: http://crown.birdstudy.pe.kr/  
 깃허브 링크: 
 
 ASUS 공유기로 포트포워딩하여 올린 것입니다.  
