@@ -1,9 +1,13 @@
+## 🔗 웹서버 URL 
+
 나중에 리눅스 사이트 파일 저장소로 쓸게요  
 둘 다 업데이트하면 안전할 듯  
-개발자 포폴 사이트 깃허브로 밀 거거든요  
+웹개발자 포폴 사이트도 깃허브로 밀 거거든요  
 Ubuntu url: http://crown.birdstudy.pe.kr/  
 Github url: https://seungyeon04.github.io/SimpleLinux.github.io/  
 
+  
+## 🖥 프로젝트 소개  
 ASUS 공유기로 포트포워딩하여 올린 것입니다.  
 나중에 공유기 바뀌면 세팅해야 하는 방식이며  
 리눅스 서버는 컴퓨터와 가상머신 켜두어야 해요   
@@ -16,12 +20,20 @@ ASUS 공유기로 포트포워딩하여 올린 것입니다.
 IPv4의 IP를 사용했어요.  
 도메인 A레코드는 외부아이피 검색해서 썼어요.  
 후이즈꺼 유료여서 얼마나 버틸지 모르겠어요  
-그래서 비주얼 스튜디오 코드로 파일 수정하고 깃허브 올리고  
-가상머신 해서 띄워둡니다  
+그래서 비주얼 스튜디오 코드로 파일 수정하고 깃허브도 저장하고  
 
- root@master:/var/www/html/test-php# ls  
-test10.php  test12.php  test1.php  test3.php  test5.php  test7.php  test9.php  
-test11.php  test13.php  test2.php  test4.php  test6.php  test8.php  
+리눅스 공부 블로그  
+디자인 포트폴리오 연습으로 제작한 것입니다.  
 
-  
-IDE: 비주얼 스튜디오 코드  
+## ⚙️ 개발환경  
+
+• 리눅스와 깃허브  
+• 언어: html css js  
+• IDE: Visual Studio Code  
+• VCS: Github desktop  
+
+## 🕹 주요기능  
+
+리눅스메모장  
+
+## 🖼 플레이 사진
