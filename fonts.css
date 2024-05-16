@@ -1,7 +1,8 @@
     .container {
         display: flex;
-        width: 80%; /* 네모네모길이 */
-        margin: 0% auto;
+        width: 50%; /* 네모네모길이 */
+        margin: 0% left;
+        margin-left: 3%;
     }
 
     .ImageBox1 {
@@ -13,14 +14,20 @@
     }
     body {
         font-family: 'Ownglyph_meetme-Rg';
-        background-color: rgb(232, 222, 247); 
+        background-color: rgb(234, 234, 234); 
         margin: 0%;
+        
+    }
+
+    img {
+        width: 100%;
     }
 
     .text {
         
         width: 50%; /* 네모네모길이 */
-        margin: 0% auto;
+        margin: 0% left;
+        margin-left: 3%;
     }
         
     :link {
