@@ -3,6 +3,7 @@
 나중에 리눅스 사이트 파일 저장소로 쓸게요  
 둘 다 업데이트하면 안전할 듯  
 웹개발자 포폴 사이트도 깃허브로 밀 거거든요  
+순서는 깃허브 업데이트 > 리눅스 서버 업데이트  
 Ubuntu url: http://crown.birdstudy.pe.kr/  
 Github url: https://seungyeon04.github.io/SimpleLinux.github.io/  
 
