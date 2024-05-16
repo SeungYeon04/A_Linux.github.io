@@ -5,49 +5,19 @@
     <link type="text/css" rel="stylesheet" href="fonts.css"> 
 </head>
 <body>
-    <div id="menu">
-            <ul style="display: inline;">
-                <img src="Image/Linuxtest1.png" width="50px" height="50px">
-
-                <li><a href="#">MENU1</a>
-                    <ul>
-                        <li><a href="#">SUB_MENU</a></li>
-                        <li><a href="#">SUB_MENU2</a></li>
-                        <li><a href="#">SUB_MENU3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">MENU2</a>
-                    <ul>
-                        <li><a href="#">SUB_MENU</a></li>
-                        <li><a href="#">SUB_MENU2</a></li>
-                        <li><a href="#">SUB_MENU3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">MENU3</a>
-                    <ul>
-                        <li><a href="#">SUB_MENU</a></li>
-                        <li><a href="#">SUB_MENU2</a></li>
-                        <li><a href="#">SUB_MENU3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">MENU4</a>
-                    <ul>
-                        <li><a href="#">SUB_MENU</a></li>
-                        <li><a href="#">SUB_MENU2</a></li>
-                        <li><a href="#">SUB_MENU3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">MENU5</a>
-                    <ul>
-                        <li><a href="#">SUB_MENU</a></li>
-                        <li><a href="#">SUB_MENU2</a></li>
-                        <li><a href="#">SUB_MENU3</a></li>
-                    </ul>
-                </li>
-            </ul>
-            
+    <header class="top-menu">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" style="height: 50px;"> <!-- 로고 이미지 경로와 크기 조정 필요 -->
         </div>
-</div>
+        <nav class="category-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <br>
     <br>
     <div class="container">
@@ -61,29 +31,46 @@
         <div class="text">최신 글</div><div class="text">대표글</div><br>
 </body>
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        ul li{
-            display: inline;
-        }
+body {
+    font-family: Arial, sans-serif;
+}
 
-        #menu {
-            background: #ccc;
-            margin:0 auto;
-		    text-align: center;
-            line-height: 50px; 
-        }
-    
-    /* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
-    #menu > ul > li > ul {
-		width:130px;
-		display:none;
-		position: absolute;
-		font-size:14px;
-		background: skyblue;
-	}
-        
-    #menu > ul > li:hover > ul {
-		display:block;
-	}
+.top-menu {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    margin-right: 20px;
+}
+
+.category-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.category-menu ul li {
+    margin-left: 20px;
+}
+
+.category-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.category-menu ul li a:hover {
+    text-decoration: underline;
+}
+
        </style>
 </html>
