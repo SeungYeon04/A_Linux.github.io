@@ -7,7 +7,7 @@
 <body>
     <header class="top-menu">
         <div class="logo">
-            <img src="Image/Linuxtest1.png" alt="로고" height="50px" width="50px"> <!-- 로고 이미지 경로와 크기 조정 필요 -->
+            <img src="Image/Linuxtest1.png" alt="로고" style="max-width: 100%;"> 
         </div>
         <nav class="category-menu">
             <ul>
@@ -35,49 +35,62 @@
         <div class="text">최신 글 Box</div><div class="text">대표글 Box</div><br>
 </body>
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.ImageBox1, .ImageBox2 {
-    max-width: 100%; /* 이미지 최대 너비 지정 */
-    height: auto; /* 이미지 높이 자동 조정 */
-}
+        body {
+            font-family: 'Ownglyph_meetme-Rg';
+        }
 
+        .top-menu {
+            display: flex;
+            align-items: center;
+            background-color: #303030;
+            color: white;
+            padding: 5px 20px;
+        }
 
-body {
-    font-family: 'Ownglyph_meetme-Rg';
-}
+        .category-menu ul {
+            list-style: none;
+            display: flex;
+        }
 
-.top-menu {
-    display: flex;
-    align-items: center;
-    background-color: #303030;
-    color: white;
-    padding: 5px 20px;
-}
+        .category-menu ul li {
+            margin-left: 20px;
+        }
 
+        .category-menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
 
-.category-menu ul {
-    list-style: none;
-    display: flex;
-}
+        .category-menu ul li a:hover {
+            text-decoration: underline;
+        }
 
-.category-menu ul li {
-    margin-left: 20px;
-}
+        .logo img {
+            height: 50px;
+            width: auto;
+            margin-right: 20px;
+        }
 
-.category-menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
+        .container {
+            display: flex; /* 아이콘과 텍스트를 수평으로 배치하기 위해 Flexbox 사용 */
+            align-items: center; /* 세로 정렬 설정 */
+        }
 
-.category-menu ul li a:hover {
-    text-decoration: underline;
-}
+        .icon img {
+            height: 50px; /* 아이콘 이미지 높이 설정 */
+            width: auto; /* 이미지 너비 자동 조정 */
+            margin-right: 10px; /* 아이콘과 텍스트 사이 간격 설정 */
+        }
 
+        .text {
+            font-size: 16px; /* 텍스트 사이즈 설정 */
+        }
        </style>
 </html>
