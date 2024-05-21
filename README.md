@@ -32,6 +32,7 @@ IPv4의 IP를 사용했어요.
 • 언어: html css js  
 • IDE: Visual Studio Code  
 • VCS: Github desktop  
+• Xshell, VirtualBox
 
 ## 🕹 주요기능  
 
