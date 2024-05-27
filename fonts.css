@@ -1,3 +1,5 @@
+
+    
     .container {
         display: flex;
         width: 50%; /* 네모네모길이 */
@@ -23,12 +25,6 @@
         width: 100%;
     }
 
-    .text {
-        
-        width: 50%; /* 네모네모길이 */
-        margin: 0% left;
-        margin-left: 3%;
-    }
         
     :link {
         color: rgb(205, 50, 192);
@@ -61,17 +57,81 @@
         background-color: rgb(255, 232, 241);
     }
     
-    .text {
-        padding: 0.5em 1em; margin: 2em 0; font-weight: bold; border: solid 3px #000000; } .box1 p { margin: 0; padding: 0; 
-            width: 50% auto; /* 네모네모길이 */
+    .textBox {
+        padding: 0.5em 1em; margin: 5px; font-weight: bold; border: solid 1px #bebebe; 
+        margin-left: 25px; background-color: #ffffff;
+        float: left; width: 200px; height: 180px;
 
+        img {
+            width: 170px; height: 120px; 
         }
+        a { /*2줄 안 넘어가게 하기 */
+            display: -webkit-box;
+            overflow: hidden; 
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+    }
 
     @font-face {
         font-family: 'Ownglyph_meetme-Rg';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
+    }
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Ownglyph_meetme-Rg';
+    }
+
+    .top-menu {
+        display: flex;
+        align-items: center;
+        background-color: #303030;
+        color: white;
+        padding: 5px 20px;
+    }
+
+    .category-menu ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .category-menu ul li {
+        margin-left: 20px;
+    }
+
+    .category-menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .category-menu ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .logo img {
+        height: 50px;
+        width: auto;
+        margin-right: 20px;
+    }
+
+    .container {
+        display: flex; /* 아이콘과 텍스트를 수평으로 배치하기 위해 Flexbox 사용 */
+        align-items: center; /* 세로 정렬 설정 */
+    }
+
+    .icon img {
+        height: 50px; /* 아이콘 이미지 높이 설정 */
+        width: auto; /* 이미지 너비 자동 조정 */
+        margin-right: 10px; /* 아이콘과 텍스트 사이 간격 설정 */
     }
 
 
