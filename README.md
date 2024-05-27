@@ -1,7 +1,7 @@
 ## 🔗 페이지 URL 
 순서는 깃허브 업데이트 > 리눅스 서버 업데이트  
 Ubuntu url: http://crown.birdstudy.pe.kr/  
-Github url: https://seungyeon04.github.io/SimpleLinux.github.io/  
+Github url: https://seungyeon04.github.io/A_Linux.github.io/  
 
   
 ## 🖥 프로젝트 소개  
