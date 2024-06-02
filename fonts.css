@@ -1,24 +1,23 @@
 
-    
     .container {
         display: flex;
-        width: 50%; /* 네모네모길이 */
-        margin: 0% left;
-        margin-left: 3%;
+        width: 90%; /* 네모네모길이 */
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .ImageBox1 {
-        flex: 1.5;  
+        flex: 1;  
     }
 
     .ImageBox2 {
-        flex: 2;  
+        flex: 1;  
     }
+
     body {
         font-family: 'Ownglyph_meetme-Rg';
-        background-color: rgb(234, 234, 234); 
+        background-color: rgb(248, 248, 238); 
         margin: 0%;
-        
     }
 
     img {
@@ -59,8 +58,8 @@
     
     .textBox {
         padding: 0.5em 1em; margin: 5px; font-weight: bold; border: solid 1px #bebebe; 
-        margin-left: 25px; background-color: #ffffff;
-        float: left; width: 200px; height: 180px;
+        margin-left: 30px; background-color: #ffffff;
+        float: left; width: 200px; height: 200px;
 
         img {
             width: 170px; height: 120px; 
@@ -69,11 +68,11 @@
             display: -webkit-box;
             overflow: hidden; 
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 3;
         }
 
     }
-
+      /* style="clear: both;" 박스 건너뛰기 */
     @font-face {
         font-family: 'Ownglyph_meetme-Rg';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
@@ -93,7 +92,7 @@
     .top-menu {
         display: flex;
         align-items: center;
-        background-color: #303030;
+        background-color: rgb(255, 225, 0);
         color: white;
         padding: 5px 20px;
     }
@@ -108,7 +107,7 @@
     }
 
     .category-menu ul li a {
-        color: white;
+        color: black;
         text-decoration: none;
         font-size: 16px;
     }
@@ -118,9 +117,9 @@
     }
 
     .logo img {
-        height: 50px;
+        height: 60px;
         width: auto;
-        margin-right: 20px;
+        margin-right: 20px; 
     }
 
     .container {
