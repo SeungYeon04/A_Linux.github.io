@@ -1,6 +1,6 @@
 ## 🔗 페이지 URL 
 순서는 깃허브 업데이트 > 리눅스 서버 업데이트  
-Ubuntu url: http://crown.birdstudy.pe.kr/  
+Ubuntu url: http://crown.cokat.p-e.kr/
 Github url: https://seungyeon04.github.io/A_Linux.github.io/  
 
   
