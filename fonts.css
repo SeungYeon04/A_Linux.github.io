@@ -57,10 +57,10 @@
     .textBox {
         padding: 0.5em 1em; margin: 5px; font-weight: bold; border: solid 1px #bebebe; border-radius: 5%; 
         margin-left: 30px; background-color: #ffffff;
-        float: left; width: 240px; height: 350px; 
+        float: left; width: 200px; height: 330px; 
 
         .gameimage {
-            width: 210px; height: 210px; 
+            width: 165px; height: 165px; 
             border-radius: 5%;
             margin-top: 3%; 
             margin-bottom: 3%; 
