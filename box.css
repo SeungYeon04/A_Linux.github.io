@@ -1,0 +1,117 @@
+.title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.AllBox {
+        display: flex;
+        justify-content: center; /* 수직 중앙 정렬 */
+        
+        .Box2 {
+            justify-content: center; /* 수직 중앙 정렬 */
+            align-items: center; /* 수평 중앙 정렬 */
+            width: 100%;
+            height: 30%;
+            background-color:gray;
+        }
+}
+
+.slides {
+    width: 700px, 100%;
+    height: 400px;
+}
+
+header {
+    background-color: #ff8a3c;
+    color: rgb(0, 0, 0);
+    padding: 5px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    position: relative;
+    display: flex;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+footer { /*하단배너*/
+    background-color: #e5e5e5; 
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center; 
+}
+
+footer .container {
+    width: 90%;
+    margin: 0 auto;
+}

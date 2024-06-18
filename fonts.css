@@ -1,29 +1,27 @@
 
-    .container {
-        display: flex;
-        width: 90%; /* 네모네모길이 */
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .ImageBox1 {
-        flex: 1;  
-    }
-
-    .ImageBox2 {
-        flex: 1;  
-    }
-
     body {
-        font-family: 'Ownglyph_meetme-Rg';
+        font-family: 'MangoDdobak-B';
         background-color: rgb(255, 255, 255); 
         margin: 0%;
+    }
+
+    @font-face {
+        font-family: 'Ownglyph_meetme-Rg';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'MangoDdobak-B';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
     }
 
     img {
         width: 100%;
     }
-
         
     :link {
         color: rgb(205, 50, 192);
@@ -57,36 +55,34 @@
     }
     
     .textBox {
-        padding: 0.5em 1em; margin: 5px; font-weight: bold; border: solid 1px #bebebe; 
+        padding: 0.5em 1em; margin: 5px; font-weight: bold; border: solid 1px #bebebe; border-radius: 5%; 
         margin-left: 30px; background-color: #ffffff;
-        float: left; width: 200px; height: 200px;
+        float: left; width: 240px; height: 350px; 
 
-        img {
-            width: 170px; height: 120px; 
+        .gameimage {
+            width: 210px; height: 210px; 
+            border-radius: 5%;
+            margin-top: 3%; 
+            margin-bottom: 3%; 
         }
-        a { /*2줄 안 넘어가게 하기 */
+        a { 
             display: -webkit-box;
-            overflow: hidden; 
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
+            margin-bottom: 3%; 
         }
-
+        .gameicon { 
+            height: 50px; /* 아이콘 이미지 높이 설정 */
+            width: 50px; /* 아이콘과 텍스트 사이 간격 설정 */
+        }
+        h3 {
+            margin-top: 15px; margin-left: 10px
+        }
     }
       /* style="clear: both;" 박스 건너뛰기 */
-    @font-face {
-        font-family: 'Ownglyph_meetme-Rg';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
+
 
     * {
         margin: 0;
         box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Ownglyph_meetme-Rg';
     }
 
     .top-menu {
@@ -125,12 +121,6 @@
     .container {
         display: flex; /* 아이콘과 텍스트를 수평으로 배치하기 위해 Flexbox 사용 */
         align-items: center; /* 세로 정렬 설정 */
-    }
-
-    .icon img {
-        height: 50px; /* 아이콘 이미지 높이 설정 */
-        width: auto; /* 이미지 너비 자동 조정 */
-        margin-right: 10px; /* 아이콘과 텍스트 사이 간격 설정 */
     }
 
 
