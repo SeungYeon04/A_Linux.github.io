@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <title>부러의 도서관</title>
     <link type="text/css" rel="stylesheet" href="fonts.css"> 
+    <link type="text/css" rel="stylesheet" href="box.css"> 
 </head>
 <body>
     <header class="top-menu">
@@ -12,18 +13,24 @@
         <nav class="category-menu">
             <ul>
                 <li><a href="">게임</a></li>
-                <li><a href="LinuxNote.html">앱</a></li>
-                <li><a href="test-php/index.html">웹 게임</a></li>
-                <li><a href="wordpress">웹사이트</a></li>
+                <li><a href="">앱</a></li>
+                <li><a href="">웹 게임</a></li>
+                <li><a href="">웹사이트</a></li>
             </ul>
         </nav>
     </header>
-    <hr>
-    <br>
-    <br>
-    <div class="container">
-        <img src="Image/Ubuntutest1.png" height="300px" class="ImageBox1">
-        <img src="Image/Ubuntutest3.jpg" height="300px" class="ImageBox2">
+    <div class="AllBox">
+        <div class="Box2">
+            <div class="slider">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                <div class="slides">
+                    <img src="image/image1.jpg" alt="Image 1" class="slide active">
+                    <img src="image/image2.jpg" alt="Image 2" class="slide">
+                    <img src="image/image3.jpeg" alt="Image 3" class="slide">
+                </div>
+            </div>
+        </div>
     </div>
     <br>
     <br>
@@ -31,26 +38,23 @@
     <br>
     <a style="margin-left: 20px;">코카티 게임(여기 다 공사중)</a><br>
         <div class="textBox">
-        <img src="Image/앵무새1.jpg"><a>
-            <a style="margin-bottom: 7px">앵무새나라 게임</a>
-            <img src="Image/구글1.jpg" style="height: 30px; width: 30px;">
-            <img src="Image/애플1.png" style="height: 30px; width: 30px;">
-            <img src="Image/Linuxtest1.png" style="height: 30px; width: 30px;">
+            <img src="Image/앵무새3.jpg" class="gameimage"><a>
+                <img src="Image/앵무새3.jpg" class="gameicon">
+                <h3>앵무새나라 게임</h3>
+                <a>모바일 / 터치형 노다가 MMORPG</a>
         </div>
-        <div class="textBox"><img src="Image/앵무새2.jpg">
-        <a>사진 넣을 게 없어서 그랬어요 광기 아닙니다ㅜㅜ 앵무새를 보면 힘이 나요 졸귀탱</a></div>
-        <div class="textBox"><img src="Image/앵무새3.jpg">
-        <a>이제 여기 링크 달고 ...만들고 박스 블로그처럼 꾸미고 폰으로도 이쁘게 나오게 하고</a></div>
-        <div class="textBox"><img src="Image/앵무새4.jpg">
-        <a>저의 정체는 개발자아임니다 갓 전자레인지 돌린 햇발자입니다 이 세상은 너무 어려운 세상</a></div>
-        <div class="textBox"><img src="Image/앵무새5.jpg">
-        <a>다음줄테스트</a></div>
-        <div class="textBox"><img src="Image/앵무새6.jpg">
-        <a>다음줄테스트</a></div>
-        <div class="textBox"><img src="Image/앵무새6.jpg">
-        <a>다음줄테스트</a></div>
-        <div class="textBox"><img src="Image/앵무새6.jpg">
-        <a>다음줄테스트</a></div>
+        <div class="textBox">
+            <img src="Image/앵무새1.jpg" class="gameimage"><a>
+                <img src="Image/앵무새1.jpg" class="gameicon">
+                <h3>앵무새나라 게임</h3>
+                <a>모바일 / 터치형 노다가 MMORPG</a>
+        </div>
+        <div class="textBox">
+            <img src="Image/앵무새1.jpg" class="gameimage"><a>
+                <img src="Image/앵무새1.jpg" class="gameicon">
+                <h3>앵무새나라 게임</h3>
+                <a>모바일 / 터치형 노다가 MMORPG</a>
+        </div>
         <br style="clear: both;"> 
         <br>
         <hr>
@@ -64,11 +68,13 @@
         <hr>
         <br>
         <a style="margin-left: 20px;">코카티 미니 사이트</a><br>
-        <div class="textBox"><img src="Image/앵무새2.jpg">
-            <a style="margin-bottom: 7px">리눅스 공부 CBT 연습</a>
-            <a href="https://seungyeon04.github.io/A_CBT1.github.io/"><img src="Image/Linuxtest1.png" style="height: 30px; width: 30px;"></a></div>
-            <br style="clear: both;"> 
-        <br>
+        <div class="textBox" onclick="window.location.href='https://seungyeon04.github.io/A_CBT1.github.io/';">
+            <img src="Image/앵무새2.jpg" class="gameimage"><a>
+                <img src="Image/앵무새2.jpg" class="gameicon">
+                <h3>리눅스 CBT 사이트</h3>
+                <a>문제풀이 사이트</a>
+        </div>
+        <br style="clear: both;">  
+        <br style="clear: both;"> 
 </body>
-
 </html>
