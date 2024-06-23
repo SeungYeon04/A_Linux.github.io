@@ -17,8 +17,10 @@
 }
 
 .slides {
-    width: 700px, 100%;
+    width: 1300px;
     height: 400px;
+    position: relative;
+    display: flex;
 }
 
 header {
@@ -68,11 +70,6 @@ section .container {
     max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
-}
-
-.slides {
-    position: relative;
-    display: flex;
 }
 
 .slide {
