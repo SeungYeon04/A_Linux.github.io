@@ -1,22 +1,21 @@
 
     body {
-        font-family: 'MangoDdobak-B';
-        background-color: rgb(255, 255, 255); 
+        font-family: 'NanumSquareNeoBold';
+        background-color: #CCCCCC; 
         margin: 0%;
+        width: 100%;
     }
 
     @font-face {
-        font-family: 'Ownglyph_meetme-Rg';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
+        font-family: 'NanumSquareNeoLight';
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
     }
 
     @font-face {
-        font-family: 'MangoDdobak-B';
-        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
-        font-weight: 700;
-        font-style: normal;
+        font-family: 'NanumSquareNeoBold';
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+        src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
     }
 
     img {
@@ -31,9 +30,7 @@
         color: rgba(0, 0, 0, 0.856);
     }
 
-    a {
-        text-decoration-line: none; 
-    }
+    
 
     pre {
 
@@ -54,20 +51,37 @@
         background-color: rgb(255, 232, 241);
     }
     
+    .textBoxBehind {
+        background-color: rgb(230, 230, 230);
+        height: 400px; 
+        margin-bottom: 4px; 
+
+        
+    }
+
     .textBox {
-        padding: 0.5em 1em; margin: 5px; font-weight: bold; border: solid 1px #bebebe; border-radius: 5%; 
-        margin-left: 30px; background-color: #ffffff;
+        margin: 5px auto; font-weight: bold; /* border: solid 1px #bebebe; border-radius: 5%; */
+        margin-left: 20px; background-color: #ffffff;
         float: left; width: 200px; height: 330px; 
+        
 
         .gameimage {
-            width: 165px; height: 165px; 
-            border-radius: 5%;
-            margin-top: 3%; 
-            margin-bottom: 3%; 
+            width: 200px; height: 165px; 
+
         }
         a { 
             display: -webkit-box;
             margin-bottom: 3%; 
+            font-size: 13px;
+            padding: 0.5em 1em;
+        }
+        #textBoxA {
+            font-size: 13px;
+            padding: 0.5em 1em;
+        }
+        .Toolicon{
+            margin: 5px;
+            width: 15%;
         }
         .gameicon { 
             height: 50px; /* 아이콘 이미지 높이 설정 */
@@ -88,18 +102,17 @@
     .top-menu {
         display: flex;
         align-items: center;
-        background-color: rgb(255, 225, 0);
-        color: white;
-        padding: 5px 20px;
+        background-color: rgb(255, 255, 255);
+        padding: 0px 20px;
+        font-size: 12px;
     }
 
-    .category-menu ul {
-        list-style: none;
-        display: flex;
+    .category-menu {
+        margin-left: auto;
     }
 
     .category-menu ul li {
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .category-menu ul li a {
