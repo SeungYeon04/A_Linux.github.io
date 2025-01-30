@@ -2,6 +2,7 @@
 순서는 깃허브 업데이트 > 리눅스 서버 업데이트  
 (현재미사용 Ubuntu url: http://crown.cokat.p-e.kr/)  
 Github url: https://seungyeon04.github.io/A_Linux.github.io/  
+Vercel url: https://cokat-mxb8hcn2m-seungyeon04s-projects.vercel.app/  
 
   
 ## 🖥 프로젝트 소개  
