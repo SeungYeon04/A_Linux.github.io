@@ -1,115 +1,425 @@
-.title {
-    display: inline-flex;
-    align-items: center;
-}
-
-.AllBox {
-        display: flex;
-        justify-content: center; /* 수직 중앙 정렬 */
-        
-        .Box2 {
-            justify-content: center; /* 수직 중앙 정렬 */
-            align-items: center; /* 수평 중앙 정렬 */
-            
-        }
-        
-}
-
-.slides {
-    width: 100%; height: 100%; /* 1440px 기준 */
-    margin: auto;
-    position: relative;
-    display: flex;
-    
-}
-
-header {
-    background-color: #ff8a3c;
-    color: rgb(0, 0, 0);
-    padding: 5px 0;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header nav ul {
-    list-style: none;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'NanumSquareNeoBold', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* 헤더 */
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
 }
 
-header nav ul li {
-    margin-left: 20px;
+.logo img {
+    height: 40px;
+    width: auto;
 }
 
-header nav ul li a {
-    color: white;
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.main-nav a {
+    color: #000000;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-main {
-    padding: 20px 0;
+.main-nav a:hover {
+    color: #666666;
 }
 
-section {
-    padding: 40px 0;
-    border-bottom: 1px solid #ddd;
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-section .container {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.slider {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    height: 600px;
-}
-
-.slide {
-    display: none;
-    width: 100%;
-}
-
-.slide.active {
-    display: block;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+.lang-btn,
+.theme-btn {
+    background: none;
     border: none;
-    padding: 10px;
+    font-size: 20px;
     cursor: pointer;
-    z-index: 10;
+    padding: 5px;
+    transition: opacity 0.3s ease;
 }
 
-.prev {
-    left: 0;
+.lang-btn:hover,
+.theme-btn:hover {
+    opacity: 0.7;
 }
 
-.next {
-    right: 0;
+.download-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-footer { /*하단배너*/
-    background-color: #e5e5e5; 
-    color: rgb(0, 0, 0);
-    padding: 20px 0;
-    text-align: center; 
+.download-btn:hover {
+    background-color: #333333;
 }
 
-footer .container {
-    width: 90%;
+/* 히어로 섹션 */
+.hero-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 80px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text {
+    color: #ffffff;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* 게임 목록 섹션 */
+.games-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.games-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.games-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.games-filter {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.filter-select {
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.filter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.filter-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* 게임 그리드 */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.game-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.game-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 10;
+    text-transform: uppercase;
+}
+
+.game-badge.coming-soon {
+    background-color: #ff4444;
+    color: #ffffff;
+}
+
+.game-badge.pre-register {
+    background-color: #ff6b9d;
+    color: #ffffff;
+}
+
+.game-badge.available {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.game-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.game-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-image img {
+    transform: scale(1.05);
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.game-description {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.game-platforms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.platform-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.platform-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #666666;
+}
+
+/* 푸터 */
+.main-footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e5e5e5;
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo img {
+    height: 30px;
+    width: auto;
+}
+
+.footer-info {
+    text-align: right;
+}
+
+.footer-info p {
+    font-size: 14px;
+    color: #666666;
+    margin: 5px 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-content {
+        padding: 60px 20px;
+    }
+
+    .games-container {
+        padding: 0 20px;
+    }
+
+    .games-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
 }
