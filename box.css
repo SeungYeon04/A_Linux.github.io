@@ -333,15 +333,6 @@ body {
     object-fit: contain;
 }
 
-.platform-tag {
-    display: inline-block;
-    padding: 4px 10px;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    font-size: 12px;
-    color: #666666;
-}
-
 /* 모바일 게임 섹션 */
 .mobile-games-section {
     padding: 80px 0;
