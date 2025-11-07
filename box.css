@@ -342,6 +342,115 @@ body {
     color: #666666;
 }
 
+/* 모바일 게임 섹션 */
+.mobile-games-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.mobile-games-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.mobile-games-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.view-all-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+    color: #666666;
+}
+
+.mobile-games-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.mobile-game-item {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.mobile-game-item:hover {
+    transform: translateY(-5px);
+}
+
+.mobile-game-cover {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-color: #f5f5f5;
+}
+
+.mobile-game-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mobile-game-item:hover .mobile-game-cover img {
+    transform: scale(1.05);
+}
+
+.mobile-game-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.mobile-game-logo {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.mobile-game-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-game-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.mobile-game-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 4px;
+    line-height: 1.3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mobile-game-genre {
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+}
+
 /* 푸터 */
 .main-footer {
     background-color: #f8f8f8;
@@ -420,6 +529,21 @@ body {
     }
 
     .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mobile-games-container {
+        padding: 0 20px;
+    }
+
+    .mobile-games-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-games-grid {
         grid-template-columns: 1fr;
     }
 }
