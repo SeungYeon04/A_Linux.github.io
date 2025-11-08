@@ -10,25 +10,7 @@
 </head>
 <body>
     <!-- 헤더 -->
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo">
-                <img src="Image/회사로고1.png" alt="로고">
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#games">게임</a></li>
-                    <li><a href="#news">소식</a></li>
-                    <li><a href="#company">회사소개</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <button class="lang-btn">🌐</button>
-                <button class="theme-btn">🌙</button>
-                <button class="download-btn">모든게임</button>
-            </div>
-        </div>
-    </header>
+    <div id="header"></div>
 
     <!-- 히어로 섹션 -->
     <section class="hero-section">
@@ -53,19 +35,7 @@
     <section id="mobile"></section>
 
     <!-- 푸터 -->
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="Image/회사로고1.png" alt="로고">
-                </div>
-                <div class="footer-info">
-                    <p>© 2024 게임 회사. All rights reserved.</p>
-                    <p>서울특별시 강남구 테헤란로 123</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <script>
     async function loadModule(id, path) {
@@ -75,9 +45,11 @@
     }
 
     // 모듈 로드
+    loadModule("header", "module/md_header.html");
     loadModule("good", "module/md_good.html");
     loadModule("item", "module/md_Item.html");
     loadModule("mobile", "module/md_mobile.html");
+    loadModule("footer", "module/md_footer.html");
     </script>
 </body>
 </html>
