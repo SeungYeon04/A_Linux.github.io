@@ -1,102 +1,83 @@
 <!DOCTYPE html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>부러의 도서관</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게임 회사</title>
     <link type="text/css" rel="stylesheet" href="fonts.css"> 
     <link type="text/css" rel="stylesheet" href="box.css"> 
     <script src="test.js" defer></script>
 </head>
 <body>
-    <header class="top-menu">
-        <img src="Image/MenuIcon.png" alt="로고" style="width: 20px; text-align: center; margin-right: 1.5%;"> 
-        <div class="logo">
-            <img src="Image/회사로고1.png" alt="로고" style="width: 80px; height: 100%; margin-right: 0;"> 
+    <!-- 헤더 -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="Image/회사로고1.png" alt="로고">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#games">게임</a></li>
+                    <li><a href="#news">소식</a></li>
+                    <li><a href="#company">회사소개</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="lang-btn">🌐</button>
+                <button class="theme-btn">🌙</button>
+                <button class="download-btn">모든게임</button>
+            </div>
         </div>
-        <nav class="category-menu">
-            <ul>
-                <li>로그인</li> 
-                <li>|</li> 
-                <li>회원가입</li>
-            </ul>
-        </nav>
     </header>
-    <div class="AllBox" >
-        <div class="Box2">
-            <div class="slider" style="height: 100%;">
-                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-                <button class="next" onclick="changeSlide(1)">&#10095;</button>             
-                <div class="slides">
-                    <img src="Image/1.png" alt="Image 1" class="slide active"> <!-- 4000 x 800 사진 -->
-                    <img src="Image/1.png" alt="Image 2" class="slide">
-                    <img src="Image/1.png" alt="Image 3" class="slide">
+
+    <!-- 히어로 섹션 -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">새로운 모험의 시작</h1>
+                <p class="hero-subtitle">사전예약 진행 중</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">사전예약 바로가기</button>
+                    <button class="btn-secondary">공식 유튜브 채널</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Image/1.png" alt="메인 게임 이미지">
+            </div>
+        </div>
+    </section>
+
+    <!-- 모듈 자리 -->
+    <section id="good"></section>
+    <section id="item"></section>
+    <section id="mobile"></section>
+
+    <!-- 푸터 -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Image/회사로고1.png" alt="로고">
+                </div>
+                <div class="footer-info">
+                    <p>© 2024 게임 회사. All rights reserved.</p>
+                    <p>서울특별시 강남구 테헤란로 123</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="textBoxBehind" >
-        <br>
-        <a style="margin-left: 20px; font-size: 13px;">추천게임</a><br>
-        <div class="textBox" onclick="window.location.href='';">
-            <img src="Image/앵무새3.jpg" class="gameimage"><a>
-                <img src="Image/앵무새3.jpg" class="gameicon">
-                <h3>티얼 빌리지</h3>
-                <a id="textBoxA">모바일게임 / PC게임<br>터치형 노다가 MMORPG</a>
-                <hr>
-                <img src="Image/AndroidIcon.png" style="margin-left: 15px;" class="Toolicon">
-                <img src="Image/AppleIcon.png" style="margin-left: 0px;" class="Toolicon">
-        </div>
-        <div class="textBox">
-            <img src="Image/앵무새1.jpg" class="gameimage"><a>
-                <img src="Image/앵무새1.jpg" class="gameicon">
-                <h3>앵무새나라</h3>
-                <a id="textBoxA">모바일 / 터치형 노다가 MMORPG</a>
-                <hr>
-                <img src="Image/AndroidIcon.png" style="margin-left: 15px;" class="Toolicon">
-        </div>
-    </div>
-        <div class="textBoxBehind" >
-            <br>
-            <a style="margin-left: 20px; font-size: 13px;">PC게임 / 모바일게임</a><br>
-            <div class="textBox" onclick="window.location.href='';">
-                <img src="Image/앵무새3.jpg" class="gameimage"><a>
-                    <img src="Image/앵무새3.jpg" class="gameicon">
-                    <h3>티얼 빌리지</h3>
-                    <a id="textBoxA">모바일게임 / PC게임<br>터치형 노다가 MMORPG</a>
-                    <hr>
-                    <img src="Image/AndroidIcon.png" style="margin-left: 15px;" class="Toolicon">
-            </div>
-            <div class="textBox">
-                <img src="Image/앵무새1.jpg" class="gameimage"><a>
-                    <img src="Image/앵무새1.jpg" class="gameicon">
-                    <h3>앵무새나라</h3>
-                    <a id="textBoxA">모바일 / 터치형 노다가 MMORPG</a>
-                    <hr>
-                    <img src="Image/AndroidIcon.png" style="margin-left: 15px;" class="Toolicon">
-            </div>
-        </div>
-        <div class="textBoxBehind">
-            <br>
-            <a style="margin-left: 20px; font-size: 13px;">모바일 앱</a><br>
-        </div>
+    </footer>
 
-        <div class="textBoxBehind">
-        <br>
-        <a style="margin-left: 20px; font-size: 13px;">웹게임 / 웹사이트</a><br>
-        <div class="textBox" onclick="window.location.href='https://seungyeon04.github.io/A_CBT1.github.io/';">
-            <img src="Image/리눅스CBT.png" class="gameimage"><a>
-                <img src="Image/리눅스CBT.png" class="gameicon"> 
-                <h3>리눅스 CBT</h3>
-                <a id="textBoxA">리눅스 문제풀이 사이트</a>
-        </div>
-        <div class="textBox" onclick="window.location.href='https://rabbitdiary.netlify.app/'">
-            <img src="Image/토끼일기.png" class="gameimage"><a>
-                <img src="Image/토끼일기.png" class="gameicon">
-                <h3>토끼일기</h3>
-                <a id="textBoxA">감성적인 배경의 일기, 기록, 메모 사이트</a>
-        </div>
-        <br style="clear: both;">  
-        <br style="clear: both;">     
-    </div>
-        
+    <script>
+    async function loadModule(id, path) {
+        const res = await fetch(path);
+        const html = await res.text();
+        document.getElementById(id).innerHTML = html;
+    }
+
+    // 모듈 로드
+    loadModule("good", "module/md_good.html");
+    loadModule("item", "module/md_Item.html");
+    loadModule("mobile", "module/md_mobile.html");
+    </script>
 </body>
 </html>
