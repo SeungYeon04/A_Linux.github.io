@@ -366,13 +366,15 @@ body {
 
 .mobile-games-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
 
 .mobile-game-item {
     cursor: pointer;
     transition: transform 0.3s ease;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .mobile-game-item:hover {
@@ -386,6 +388,7 @@ body {
     border-radius: 8px;
     margin-bottom: 12px;
     background-color: #f5f5f5;
+    max-height: 60%;
 }
 
 .mobile-game-cover img {
@@ -402,12 +405,13 @@ body {
 .mobile-game-details {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
+    position: relative;
 }
 
 .mobile-game-logo {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 6px;
     overflow: hidden;
     background-color: #f5f5f5;
@@ -420,8 +424,13 @@ body {
     object-fit: cover;
 }
 
+.mobile-game-text {
+    flex: 1;
+    min-width: 0;
+}
+
 .mobile-game-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #000;
     margin-bottom: 4px;
@@ -432,8 +441,22 @@ body {
 }
 
 .mobile-game-genre {
-    font-size: 14px;
+    font-size: 12px;
     color: #666;
+}
+
+.mobile-game-platforms {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.mobile-game-platforms .platform-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
 /* ─────────────────────────────────────
@@ -525,10 +548,62 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
+
+    .mobile-game-item {
+        max-width: 100%;
+    }
+
+    .mobile-game-cover {
+        max-height: 55%;
+    }
+
+    .mobile-game-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mobile-game-title {
+        font-size: 13px;
+    }
+
+    .mobile-game-genre {
+        font-size: 11px;
+    }
+
+    .mobile-game-platforms .platform-icon {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 @media (max-width: 480px) {
     .mobile-games-grid {
         grid-template-columns: 1fr;
+    }
+
+    .mobile-game-item {
+        max-width: 100%;
+    }
+
+    .mobile-game-cover {
+        max-height: 50%;
+    }
+
+    .mobile-game-logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    .mobile-game-title {
+        font-size: 12px;
+    }
+
+    .mobile-game-genre {
+        font-size: 10px;
+    }
+
+    .mobile-game-platforms .platform-icon {
+        width: 14px;
+        height: 14px;
     }
 }
