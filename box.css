@@ -366,14 +366,15 @@ body {
 
 .mobile-games-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
 }
 
 .mobile-game-item {
     cursor: pointer;
     transition: transform 0.3s ease;
     max-width: 200px;
+    height: 115%;
     margin: 0 auto;
 }
 
@@ -592,7 +593,7 @@ body {
     }
 
     .mobile-games-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 15px;
     }
 
@@ -640,7 +641,7 @@ body {
 
 @media (max-width: 480px) {
     .mobile-games-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(5, 1fr);
     }
 
     .mobile-game-item {
